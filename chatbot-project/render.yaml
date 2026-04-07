@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: chatbot-test-api
+    runtime: node
+    branch: main
+    autoDeploy: true
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false

@@ -1,0 +1,23 @@
+# secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# dependencies and build
+**/node_modules/
+**/dist/
+**/.vite/
+**/.vite-temp/
+
+# logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# os/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# local tooling
+.claude/
